@@ -48,3 +48,7 @@ All 46 supplied mission solutions and worked examples pass; no mission passes it
 The dist directory can be served by any static web host. Local progress is separate from the published site because browser storage is scoped to the site origin.
 
 Example animation regression checks: `node work/examples-test.mjs`. Covers typing order, output timing, replay, skip, hidden-tab pause, reduced motion, and cleanup.
+
+## GitHub Pages
+
+The `.github/workflows/pages.yml` workflow publishes only `dist/` to GitHub Pages when a commit reaches `main`. In repository Settings > Pages, choose **GitHub Actions** as the source. GitHub Pages must be available for the repository’s visibility and account plan. You can also run the workflow manually from the Actions tab. No build step or npm installation is required.
